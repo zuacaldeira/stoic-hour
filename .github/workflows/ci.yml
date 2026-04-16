@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate XML files
+        run: |
+          sudo apt-get install -y libxml2-utils
+          for f in $(find . -name '*.xml' -not -path './.git/*'); do
+            echo "Validating $f"
+            xmllint --noout "$f"
+          done
+
+      - name: Verify manifest UUID format
+        run: |
+          UUID=$(grep -oP 'id="\K[a-f0-9]{32}' manifest.xml)
+          if [ -z "$UUID" ]; then echo "Missing or malformed UUID in manifest.xml"; exit 1; fi
+          echo "Manifest UUID: $UUID"
+
+      - name: Verify all device entries match resource folders
+        run: |
+          DEVICES=$(grep -oP 'product id="\K[^"]+' manifest.xml | sort -u)
+          echo "Manifest declares: $DEVICES"
+
+      - name: Verify all language entries have a strings file
+        run: |
+          for lang in $(grep -oP '<iq:language>\K[a-z]+' manifest.xml); do
+            if [ "$lang" = "eng" ]; then
+              FILE="resources/strings/AppStrings.xml"
+            else
+              FILE="resources-$lang/strings/AppStrings.xml"
+            fi
+            if [ ! -f "$FILE" ]; then
+              echo "Missing strings file for declared language $lang ($FILE)"
+              exit 1
+            fi
+            echo "OK: $lang -> $FILE"
+          done
+
+      - name: License & changelog present
+        run: test -f LICENSE && test -f CHANGELOG.md
+
+      - name: Quote count check (>= 100)
+        run: |
+          COUNT=$(grep -c "new Quote(" source/Quotes.mc)
+          echo "Quote count: $COUNT"
+          if [ "$COUNT" -lt 100 ]; then echo "Below 100-quote threshold"; exit 1; fi
