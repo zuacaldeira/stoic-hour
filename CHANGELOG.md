@@ -1,5 +1,6 @@
 # Changelog
 
+All notable changes to Stoic Hour are documented here.
 
 ## [1.0.1] — 2026-04-17
 
@@ -9,8 +10,6 @@
 - `CONTRIBUTING.md`, `SECURITY.md`, `CONTRIBUTORS.md`
 - GitHub issue templates (bug report, feature request)
 - README badges (CI, license, CIQ version, devices, languages, quotes, tests)
-
-All notable changes to Stoic Hour are documented here.
 
 ## [1.0.0] — 2026-04-17
 
