@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+    <string id="AppName">Stoic Hour</string>
+    <string id="SetTime24">Use 24-hour time</string>
+    <string id="SetFontSize">Quote font size</string>
+    <string id="FontSmall">Small</string>
+    <string id="FontMedium">Medium</string>
+    <string id="FontLarge">Large</string>
+    <string id="SetIncludeMarcus">Marcus Aurelius</string>
+    <string id="SetIncludeEpictetus">Epictetus</string>
+    <string id="SetIncludeSeneca">Seneca</string>
+</strings>

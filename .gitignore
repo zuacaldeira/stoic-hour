@@ -1,0 +1,5 @@
+*.prg
+*.iq
+*.debug.xml
+bin/
+.DS_Store

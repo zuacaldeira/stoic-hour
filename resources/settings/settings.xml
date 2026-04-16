@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting propertyKey="@Properties.use24Hour" title="@Strings.SetTime24">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.fontSize" title="@Strings.SetFontSize">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.FontSmall</listEntry>
+            <listEntry value="2">@Strings.FontMedium</listEntry>
+            <listEntry value="3">@Strings.FontLarge</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.includeMarcus" title="@Strings.SetIncludeMarcus">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.includeEpictetus" title="@Strings.SetIncludeEpictetus">
+        <settingConfig type="boolean"/>
+    </setting>
+    <setting propertyKey="@Properties.includeSeneca" title="@Strings.SetIncludeSeneca">
+        <settingConfig type="boolean"/>
+    </setting>
+</settings>

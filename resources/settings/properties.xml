@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+    <property id="use24Hour" type="boolean">true</property>
+    <property id="fontSize" type="number">2</property>
+    <property id="includeMarcus" type="boolean">true</property>
+    <property id="includeEpictetus" type="boolean">true</property>
+    <property id="includeSeneca" type="boolean">true</property>
+</properties>

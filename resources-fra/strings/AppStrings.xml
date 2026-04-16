@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+    <string id="AppName">Heure Stoïque</string>
+    <string id="SetTime24">Format 24 heures</string>
+    <string id="SetFontSize">Taille de police</string>
+    <string id="FontSmall">Petite</string>
+    <string id="FontMedium">Moyenne</string>
+    <string id="FontLarge">Grande</string>
+    <string id="SetIncludeMarcus">Marc Aurèle</string>
+    <string id="SetIncludeEpictetus">Épictète</string>
+    <string id="SetIncludeSeneca">Sénèque</string>
+</strings>
