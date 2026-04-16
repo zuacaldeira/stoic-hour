@@ -112,7 +112,9 @@ module QuoteStore {
             new Quote(125, "Step over the obstacle. The obstacle is the way.", "Marcus Aurelius"),
             new Quote(126, "Wherever there is a human being, there is an opportunity for a kindness.", "Seneca"),
             new Quote(127, "Throw away your books; stop letting yourself be distracted.", "Marcus Aurelius"),
-            new Quote(128, "What is morning? It is the smallest start, repeated.", "Seneca")
+            new Quote(128, "What is morning? It is the smallest start, repeated.", "Seneca"),
+            new Quote(129, "Cease, then, walking thither and back; for thou hast not long to live.", "Marcus Aurelius"),
+            new Quote(130, "Awake from sleep and recognise that they were dreams that troubled you.", "Marcus Aurelius")
         ] as Lang.Array<Quote>;
     }
 
@@ -145,7 +147,9 @@ module QuoteStore {
             new Quote(225, "A gem cannot be polished without friction, nor a man perfected without trials.", "Seneca"),
             new Quote(226, "He suffers more than necessary, who suffers before it is necessary.", "Seneca"),
             new Quote(227, "Anger, if not restrained, is frequently more hurtful to us than the injury that provokes it.", "Seneca"),
-            new Quote(228, "The greatest remedy for anger is delay.", "Seneca")
+            new Quote(228, "The greatest remedy for anger is delay.", "Seneca"),
+            new Quote(229, "Throw out your conceited opinions, for it is impossible for a person to begin to learn what he thinks he already knows.", "Epictetus"),
+            new Quote(230, "Hang on to your youthful enthusiasms — you'll be able to use them better when you're older.", "Seneca")
         ] as Lang.Array<Quote>;
     }
 
@@ -178,7 +182,9 @@ module QuoteStore {
             new Quote(325, "Look at every day as if it were the last; the day will come when you will not have time even to draw breath.", "Marcus Aurelius"),
             new Quote(326, "All things fade away and become legend, and legend itself is soon swallowed up in oblivion.", "Marcus Aurelius"),
             new Quote(327, "If thou are pained by any external thing, it is not this thing that disturbs thee, but thy own judgment about it.", "Marcus Aurelius"),
-            new Quote(328, "What we cannot bear removes us from life; what remains can be borne.", "Seneca")
+            new Quote(328, "What we cannot bear removes us from life; what remains can be borne.", "Seneca"),
+            new Quote(329, "All that we hear is an opinion, not a fact. All that we see is a perspective, not the truth.", "Marcus Aurelius"),
+            new Quote(330, "It is the time of your life to be at peace with the world and with yourself.", "Seneca")
         ] as Lang.Array<Quote>;
     }
 
@@ -211,7 +217,9 @@ module QuoteStore {
             new Quote(425, "If you are pained by any external thing, it is not this thing that disturbs you, but your own judgment about it.", "Marcus Aurelius"),
             new Quote(426, "Stop wandering about! You aren't likely to read your own notebooks, or ancient histories, or the anthologies you've collected to enjoy in your old age.", "Marcus Aurelius"),
             new Quote(427, "Death and life, success and failure, pain and pleasure, honor and dishonor, all these things equally happen to good men and bad.", "Marcus Aurelius"),
-            new Quote(428, "I have often wondered how it is that every man loves himself more than all the rest of men, but yet sets less value on his own opinion of himself than on the opinion of others.", "Marcus Aurelius")
+            new Quote(428, "I have often wondered how it is that every man loves himself more than all the rest of men, but yet sets less value on his own opinion of himself than on the opinion of others.", "Marcus Aurelius"),
+            new Quote(429, "Where you do not wish to go, do not be carried; where you do wish to go, walk steadily.", "Epictetus"),
+            new Quote(430, "Sleep is the half-brother of Death.", "Hesiod")
         ] as Lang.Array<Quote>;
     }
 }

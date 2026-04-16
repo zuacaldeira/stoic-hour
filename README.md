@@ -1,6 +1,18 @@
 # Stoic Hour
 
+[![CI](https://github.com/zuacaldeira/stoic-hour/actions/workflows/ci.yml/badge.svg)](https://github.com/zuacaldeira/stoic-hour/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Connect IQ](https://img.shields.io/badge/Connect%20IQ-9.1-blue)](https://developer.garmin.com/connect-iq/)
+[![Devices](https://img.shields.io/badge/devices-9-green)](manifest.xml)
+[![Languages](https://img.shields.io/badge/languages-6-green)](resources-deu)
+[![Quotes](https://img.shields.io/badge/quotes-120-green)](source/Quotes.mc)
+[![Tests](https://img.shields.io/badge/tests-7%20passing-brightgreen)](source/test/QuoteStoreTest.mc)
+
 A Garmin Connect IQ watch face that displays the time alongside a Stoic quote chosen by time-of-day. The face supports nine devices, six languages, AMOLED always-on display, configurable author whitelist, and a no-repeat-recent quote rotation.
+
+## Screenshot
+
+> Coming soon — capture from simulator via *File → Capture Device* and drop into `docs/screenshots/`.
 
 ## Features
 

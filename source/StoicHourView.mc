@@ -78,7 +78,7 @@ class StoicHourView extends WatchUi.WatchFace {
         dc.clear();
 
         _drawTime(dc, hour, minute, w, h);
-        _drawAccentLine(dc, w, h);
+        _drawAccentLine(dc, w, h, bucket);
 
         if (_currentQuote != null and !_isAsleep) {
             var timeFontH = dc.getFontHeight(Graphics.FONT_NUMBER_MEDIUM);
@@ -115,14 +115,19 @@ class StoicHourView extends WatchUi.WatchFace {
         }
     }
 
-    private function _drawAccentLine(dc as Graphics.Dc, w as Lang.Number, h as Lang.Number) as Void {
+    private function _drawAccentLine(dc as Graphics.Dc, w as Lang.Number, h as Lang.Number, bucket as Lang.Number) as Void {
         if (_isAsleep) { return; }
         var y = h*32/100;
         var lineW = w*22/100;
         var x1 = (w/2) - (lineW/2);
         var x2 = (w/2) + (lineW/2);
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(1);
+        var color;
+        if (bucket == QuoteStore.BUCKET_MORNING)      { color = 0xCC8844; }
+        else if (bucket == QuoteStore.BUCKET_MIDDAY)  { color = 0xCCCCCC; }
+        else if (bucket == QuoteStore.BUCKET_EVENING) { color = 0x6688CC; }
+        else                                          { color = 0x885599; }
+        dc.setColor(color, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
         dc.drawLine(x1, y, x2, y);
     }
 

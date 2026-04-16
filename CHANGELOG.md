@@ -1,5 +1,15 @@
 # Changelog
 
+
+## [1.0.1] — 2026-04-17
+
+### Added
+- Bucket-specific accent color under the time: warm gold (morning), neutral white (midday), cool blue (evening), deep purple (night)
+- 8 more quotes (total 120; 30 per bucket)
+- `CONTRIBUTING.md`, `SECURITY.md`, `CONTRIBUTORS.md`
+- GitHub issue templates (bug report, feature request)
+- README badges (CI, license, CIQ version, devices, languages, quotes, tests)
+
 All notable changes to Stoic Hour are documented here.
 
 ## [1.0.0] — 2026-04-17
