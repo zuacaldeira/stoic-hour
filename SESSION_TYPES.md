@@ -111,13 +111,19 @@ If Connect IQ shipped Monkey C with a comparable `@Session` annotation (or if a 
 
 This is a direct application of session-type theory to a real wearable platform, and is the kind of cross-domain claim the research project documents in its band 800 (engineering / wearables) registry.
 
-## 6. Suggested registry entries (for the research project)
+## 6. Registered research steps
 
-Promotable to `docs/planning/future-steps-registry.md` of the SessionTypesResearch repo:
+The three proposals below are **registered** in the Session Types Research programme registry (`docs/planning/future-steps-registry.md`, commit `fb1f217f`, 2026-04-17) with status `Planned`. They are tracked; none is yet mechanised.
 
 - **Step 830** — Connect IQ `WatchFace` lifecycle as a session type: encode the four-state lifecycle, prove reticularity at bound 4 in Alloy, then mechanise lattice-isomorphism in Lean. First experiment: this Stoic Hour project.
-- **Step 831** — Monkey C as a target language for BICA-style typestate checking: assess feasibility of porting the BICA annotation processor to Monkey C's compile-time hooks, or alternatively shipping a static-analysis CLI that consumes the same `@Session` strings.
-- **Step 832** — Connect IQ `DataField`, `Widget`, and `App` lifecycles as a *family* of related session types; check whether they form a subtyping hierarchy under Gay–Hole subtyping (likely yes: `WatchFace` is roughly a sub-protocol of `App`).
+- **Step 831** — Monkey C as a target language for BICA-style typestate checking: assess feasibility of porting the BICA annotation processor to Monkey C's compile-time hooks, or alternatively shipping a static-analysis CLI that consumes the same `@Session` strings. Depends on 830.
+- **Step 832** — Connect IQ `DataField`, `Widget`, `App`, and `WatchFace` lifecycles as a *family* of related session types; check whether they form a subtyping hierarchy under Gay–Hole subtyping (working conjecture: `WatchFace` ⊑ `App`). Depends on 830.
+
+### Bridge protocol
+
+- **Theory / mechanisation** (Alloy models, Lean proofs, step papers): lives in `~/Development/SessionTypesResearch/papers/steps/step830*/` (and 831, 832) when promoted out of the registry.
+- **Empirical witness** (this watch face): lives here. Changes to `StoicHourView.mc` that invalidate the lifecycle in §1 must update §1 in the same commit.
+- **Cross-repo update**: if a discovery here materially changes any of the three step statements, raise the update in the research repo. See [`CLAUDE.md §7`](CLAUDE.md#7-registered-research-steps).
 
 ## 7. Limits of this analysis
 
